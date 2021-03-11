@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html>
-  <head oncontextmenu="return false">
+  <head oncontextmenu="return false" onload="myFunction()">
       <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">   
       <title>ClearStreams</title>
     <meta name="description" content="Free Sports Streams">
@@ -22,17 +22,11 @@
     
     
    
-  // Redirect to new site
+  // Redirect to new site onload
   
-  
-     // Your application has indicated there's an error
-    window.setTimeout(function(){
-
-        // Move to a new location or you can do something else
-        window.location.href = "https://streambeta.tk";
-
-    }, 1000);
-
+function myFunction() {
+ window.location.href = "https://streambeta.tk";
+}
   
   
   
@@ -109,7 +103,7 @@ document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
       document.addEventListener('contextmenu', event => event.preventDefault());
     </script>
 
-    <body oncontextmenu="return false">
+    <body oncontextmenu="return false" onload="myFunction()">
     
     <script>
    document.addEventListener('keydown', function() {
@@ -611,11 +605,11 @@ navigator.serviceWorker.addEventListener('controllerchange', () => {
           margin-bottom: 30px; 
         } 
     </style> 
-       <footer>                                                                
+       <footer onload="myFunction()">                                                                
     
   
 </footer>
-<footer>
+<footer onload="myFunction()">
                                     <div align="left">
           <a href="https://discord.gg/pjx5Ner3r4"><img src="discord1.png" width="180px"/></a>
      </div>
